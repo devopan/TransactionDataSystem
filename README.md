@@ -37,7 +37,7 @@ The system is designed with clean architecture principles, making it maintainabl
 ### 1. Clone the Repository
 
 \`\`\`bash
-git clone https://github.com/devopan/transaction-data-system.git
+git clone https://github.com/devopan/TransactionDataSystem.git
 cd transaction-data-system
 \`\`\`
 
@@ -101,79 +101,6 @@ Once the application is running, you can access:
 
 - API endpoints at `https://localhost:7101/api/`
 - Swagger documentation at `https://localhost:7101/swagger`
-
-## Project Structure
-
-\`\`\`
-TransactionDataSystem.sln
-├── TransactionDataSystem.Web
-│   ├── Controllers
-│   │   ├── BaseController.cs
-│   │   ├── UsersController.cs
-│   │   ├── TransactionsController.cs
-│   │   └── ReportingController.cs
-│   ├── Middleware
-│   │   └── ExceptionHandlingMiddleware.cs
-│   ├── Models
-│   │   └── ErrorResponse.cs
-│   ├── Extensions
-│   │   └── ExceptionHandlingExtensions.cs
-│   ├── Program.cs
-│   └── appsettings.json
-├── TransactionDataSystem.Domain
-│   ├── Entities
-│   │   ├── User.cs
-│   │   ├── Transaction.cs
-│   │   └── UserTransaction.cs
-│   ├── Exceptions
-│   │   ├── BaseException.cs
-│   │   ├── NotFoundException.cs
-│   │   ├── BadRequestException.cs
-│   │   └── DatabaseException.cs
-│   └── Enums
-│       └── TransactionTypeEnum.cs
-├── TransactionDataSystem.Infrastructure
-│   ├── Data
-│   │   └── ApplicationDbContext.cs
-│   ├── Repositories
-│   │   ├── IRepository.cs
-│   │   └── Repository.cs
-│   ├── UnitOfWork
-│   │   ├── IUnitOfWork.cs
-│   │   └── UnitOfWork.cs
-│   └── Migrations
-│       └── InitialCreate.cs
-├── TransactionDataSystem.Services
-│   ├── DTOs
-│   │   ├── CreateActionDto.cs
-│   │   ├── CreateUserDto.cs
-│   │   ├── HighVolumeTransactionReportDto.cs
-│   │   ├── TransactionDto.cs
-│   │   ├── TransactionTypeReportDto.cs
-│   │   ├── UpdateUserDto.cs
-│   │   ├── UserDto.cs
-│   │   ├── UserTransactionDto.cs
-│   │   └── UserTransactionReportDto.cs
-│   ├── Interfaces
-│   │   ├── IUserService.cs
-│   │   ├── ITransactionService.cs
-│   │   └── IReportingService.cs
-│   ├── Services
-│   │   ├── UserService.cs
-│   │   ├── TransactionService.cs
-│   │   └── ReportingService.cs
-│   └── Mapping
-│       └── MappingProfile.cs
-├── TransactionDataSystem.Services.Test.Unit
-│   └── Services
-│       └── UserServiceTests.cs
-└── TransactionDataSystem.Web.Test.Integration
-    ├── CustomWebApplicationFactory.cs
-    └── Controllers
-        ├── UsersControllerTests.cs
-        ├── TransactionsControllerTests.cs
-        └── ReportingControllerTests.cs
-\`\`\`
 
 ## API Endpoints
 
